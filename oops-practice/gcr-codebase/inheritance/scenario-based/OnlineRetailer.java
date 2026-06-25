@@ -48,8 +48,10 @@ public class OnlineRetailer{
     }
     public void main(String[] args) {
         DeliveredOrder order = new DeliveredOrder(56, "2025-06-25", 9546321, "2025-06-28");
+        ShippedOrder o2 = new ShippedOrder(56, "2025-06-25", 9546321);
         order.display();
+        o2.display();
         System.out.println("Status: "+order.getOrderStatus());
-
+        System.out.println("Status: " +o2.getOrderStatus());
     }
 }
