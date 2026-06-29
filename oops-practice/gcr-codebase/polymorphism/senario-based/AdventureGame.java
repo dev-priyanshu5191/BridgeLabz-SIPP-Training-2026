@@ -11,7 +11,6 @@ class GameCharacter {
     }
 }
 
-// Warrior Class
 class Warrior extends GameCharacter {
 
     public Warrior(String characterName) {
@@ -24,7 +23,6 @@ class Warrior extends GameCharacter {
     }
 }
 
-// Mage Class
 class Mage extends GameCharacter {
 
     public Mage(String characterName) {
@@ -37,7 +35,6 @@ class Mage extends GameCharacter {
     }
 }
 
-// Archer Class
 class Archer extends GameCharacter {
 
     public Archer(String characterName) {
@@ -50,7 +47,6 @@ class Archer extends GameCharacter {
     }
 }
 
-// Main Class
 public class AdventureGame {
 
     public static void startBattle(GameCharacter[] characters) {
@@ -63,10 +59,8 @@ public class AdventureGame {
 
         for (GameCharacter c : characters) {
 
-            // Runtime Polymorphism
             c.performAttack();
 
-            // Counting using instanceof
             if (c instanceof Warrior)
                 warriorCount++;
             else if (c instanceof Mage)

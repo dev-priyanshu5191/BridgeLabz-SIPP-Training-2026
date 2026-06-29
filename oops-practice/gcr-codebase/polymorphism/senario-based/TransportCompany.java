@@ -5,39 +5,39 @@ class Vehicle {
     }
 }
 
-// Car Class
+
 class Car extends Vehicle {
 
     @Override
     public double fuelCost(int km) {
-        return km * 8;      // ₹8 per km
+        return km * 8;      
     }
 }
 
-// Bus Class
+
 class Bus extends Vehicle {
 
     @Override
     public double fuelCost(int km) {
-        return km * 15;     // ₹15 per km
+        return km * 15;    
     }
 }
 
-// Bike Class
+
 class Bike extends Vehicle {
 
     @Override
     public double fuelCost(int km) {
-        return km * 3;      // ₹3 per km
+        return km * 3;      
     }
 }
 
-// New Class (Open/Closed Principle)
+
 class ElectricCar extends Vehicle {
 
     @Override
     public double fuelCost(int km) {
-        return km * 2;      // ₹2 per km (charging cost)
+        return km * 2;      
     }
 }
 

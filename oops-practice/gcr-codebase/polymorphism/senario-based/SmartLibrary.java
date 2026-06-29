@@ -56,14 +56,12 @@ class GuestMember extends LibraryMember {
 
     @Override
     public double calculateFine(int overdueDays) {
-        return overdueDays * 5;      // ₹5 per day
+        return overdueDays * 5;    
     }
 }
 
-// Main Class
 public class SmartLibrary {
 
-    // Search member by ID
     public static void searchMember(LibraryMember[] members, String id) {
 
         boolean found = false;
@@ -95,7 +93,7 @@ public class SmartLibrary {
 
         System.out.println("----- Library Members -----\n");
 
-        // Dynamic Method Dispatch
+
         for (LibraryMember m : members) {
 
             m.printDetails();
@@ -104,7 +102,7 @@ public class SmartLibrary {
             System.out.println("--------------------------");
         }
 
-        // Search Member
+
         searchMember(members, "F201");
     }
 }

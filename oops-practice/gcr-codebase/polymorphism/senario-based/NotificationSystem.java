@@ -13,7 +13,6 @@ class Notification {
     }
 }
 
-// Email Notification
 class EmailNotification extends Notification {
 
     public EmailNotification(String recipientName, String message) {
@@ -28,7 +27,6 @@ class EmailNotification extends Notification {
     }
 }
 
-// SMS Notification
 class SMSNotification extends Notification {
 
     public SMSNotification(String recipientName, String message) {
@@ -43,7 +41,6 @@ class SMSNotification extends Notification {
     }
 }
 
-// Push Notification
 class PushNotification extends Notification {
 
     public PushNotification(String recipientName, String message) {
@@ -58,7 +55,6 @@ class PushNotification extends Notification {
     }
 }
 
-// Main Class
 public class NotificationSystem {
 
     public static void main(String[] args) {
@@ -72,7 +68,6 @@ public class NotificationSystem {
 
         System.out.println("----- Notifications Sent -----\n");
 
-        // Dynamic Method Dispatch
         for (Notification n : notifications) {
             n.sendNotification();
         }
