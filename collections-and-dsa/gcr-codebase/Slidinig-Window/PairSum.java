@@ -1,5 +1,3 @@
-package Sliding_Window;
-
 public class PairSum {
     public static int[] pairSum(int[] arr, int target) {
         int left = 0;

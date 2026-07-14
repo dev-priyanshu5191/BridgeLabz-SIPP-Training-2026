@@ -1,4 +1,3 @@
-package LinkedList;
 public class InsertTrackAfterCurrent {
     static class Node {
         int trackId;
