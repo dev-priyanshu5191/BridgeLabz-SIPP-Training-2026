@@ -1,5 +1,4 @@
-public class InsertTrackAfterCurrent {
-    static class Node {
+class Node {
         int trackId;
         Node next;
 
@@ -7,6 +6,7 @@ public class InsertTrackAfterCurrent {
             this.trackId = trackId;
         }
     }
+public class InsertTrackAfterCurrent {
     static void insertAfter(Node current, int trackId) {
         if (current == null) {
             return;
